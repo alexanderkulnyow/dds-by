@@ -1,0 +1,90 @@
+@font-face
+  font-family: 'Gillroy'
+  src: url('../fonts/gilroy/regular/gilroy-regular-webfont.eot')
+  src: url('../fonts/gilroy/regular/gilroy-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/gilroy/regular/gilroy-regular-webfont.woff') format('woff'),
+  url('../fonts/gilroy/regular/gilroy-regular-webfont.ttf') format('truetype')
+  fond-display: optional
+  font-weight: normal
+  font-style: normal
+@font-face
+  font-family: 'Gillroy'
+  src: url('../fonts/gilroy/bolditalic/gilroy-bolditalic-webfont.eot')
+  src: url('../fonts/gilroy/bolditalic/gilroy-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/gilroy/bolditalic/gilroy-bolditalic-webfont.woff') format('woff'),
+  url('../fonts/gilroy/bolditalic/gilroy-bolditalic-webfont.ttf') format('truetype')
+  fond-display: optional
+  font-weight: bold
+  font-style: italic
+@font-face
+  font-family: 'Gillroy'
+  src: url('../fonts/gilroy/regularitalic/gilroy-regularitalic-webfont.eot')
+  src: url('../fonts/gilroy/regularitalic/gilroy-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/gilroy/regularitalic/gilroy-regularitalic-webfont.woff') format('woff'),
+  url('../fonts/gilroy/regularitalic/gilroy-regularitalic-webfont.ttf') format('truetype')
+  fond-display: optional
+  font-weight: normal
+  font-style: italic
+
+html
+  font-size: 16px
+
+h1, h2, h3, h4, h5, h6, p, a, ul, li
+  font-family: 'Gillroy', sans-serif
+  color: $maintext
+h1, h2, h3, h4, h5, h6
+  a
+    &:hover
+      text-decoration: none
+      color: $maintext
+
+h1
+  font-size: 2rem
+  color: black
+  font-style: italic
+  font-weight: normal
+  text-align: left
+h1.title_of_page
+  text-align: center !important
+  font-size: 3rem !important
+  margin-bottom: 80px
+  font-style: normal
+  font-weight: 700
+
+h2
+  font-size: 3rem
+  font-style: italic
+  font-weight: bold
+  a
+    &:hover
+      text-decoration: none !important
+
+h3
+  font-size: 2rem
+  font-style: italic
+  font-weight: bold
+h4
+  font-size: 1.5rem
+  font-style: italic
+  font-weight: bold
+h5
+h6
+
+.text__bold
+  font-weight: bold
+
+p
+  font-weight: 400
+  font-size: 20px
+
+  &>a
+    text-decoration: none
+    color: cornflowerblue
+    &:hover
+      text-decoration: underline
+
+.svg__hover
+  fill: red
+  &:visited
+    color: $link_visited
+

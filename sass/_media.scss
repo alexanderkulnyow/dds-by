@@ -1,0 +1,92 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
+  h2, h3 {
+    /*font-size: 1.5rem; !important;*/
+  }
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+
+@media only screen and (max-width: 540px) {
+  .card__caption {
+    padding: 10px;
+  }
+  h3.card-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 768px) {
+  .kama_breadcrumbs {
+    font-size: 14px;
+  }
+  h2.text-right{
+    margin-top: 50px;
+  }
+  .home__services h3 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .home__services p {
+    text-align: left;
+    padding: 0 10%;
+  }
+  footer.footer h4 {
+    margin-bottom: 15px;
+    font-size: 8rem !important;
+  }
+  .menu__container {
+    position: fixed;
+    box-shadow: 0 1px 1px rgba(214, 214, 214, 0.5);
+  }
+  .site-content {
+    margin-top: 89px;
+  }
+  #BtnTOP {
+    padding: 10px 10px; /* Some padding */
+    & svg {
+      max-width: 20px;
+      max-height: 20px;
+    }
+
+  }
+
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-device-width: 1024px) and (max-width: 1224px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
