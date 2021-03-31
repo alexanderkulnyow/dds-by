@@ -24,7 +24,7 @@ function browserSync() {
     browserReload.init(
         {
             proxy: {
-                target: 'https://otip.loc/',
+                target: 'https://dds.loc/',
             },
             files: [path.php],
             port: 3002,

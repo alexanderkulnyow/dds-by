@@ -147,6 +147,10 @@ function dds_by_scripts() {
  */
 require get_template_directory() . '/inc/custom-header.php';
 /**
+ * Custom post types.
+ */
+require get_template_directory() . '/inc/custom-post-types.php';
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
