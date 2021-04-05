@@ -28,14 +28,14 @@ function e__mail() {
 }
 
 function social_media() {
-	echo '<a class="no__left" title="Behance" href="' . get_option( 'dds_options' )['social_be'] . '" target="_blank">';
-	echo '<img src="' . get_template_directory_uri() . '/img/icons/behance.svg" alt="Ресторанный дизайн Витебск"/>';
+	echo '<a class="no__left" title="Behance" href=" '. get_option( 'dds_options' )['social_be'] .' " target="_blank">';
+	echo '<img width="20" src="' . get_template_directory_uri() . '/img/icons/behance.svg" alt="Ресторанный дизайн Витебск"/>';
 	echo '</a>';
-	echo '<a class="col" title="Vk" href="' . get_option( 'dds_options' )['social_vk'] . '" target="_blank">';
-	echo '<img src="' . get_template_directory_uri() . '/img/icons/vk.svg" alt="Ресторанный дизайн Витебск"/>';
+	echo '<a class="" title="Vk" href="' . get_option( 'dds_options' )['social_vk'] . '" target="_blank">';
+	echo '<img width="20" src="' . get_template_directory_uri() . '/img/icons/vk.svg" alt="Ресторанный дизайн Витебск"/>';
 	echo '</a>';
-	echo '<a class="col" title="Instagram" href="' . get_option( 'dds_options' )['social_inst'] . '" target="_blank">';
-	echo '<img src="' . get_template_directory_uri() . '/img/icons/in-logo.svg" alt="Ресторанный дизайн Витебск"/>';
+	echo '<a class="" title="Instagram" href="' . get_option( 'dds_options' )['social_inst'] . '" target="_blank">';
+	echo '<img width="20" src="' . get_template_directory_uri() . '/img/icons/in-logo.svg" alt="Ресторанный дизайн Витебск"/>';
 	echo '</a>';
 }
 
@@ -130,7 +130,7 @@ function dds_by_scripts() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/vendors/bootstrap-4.6.0-dist/css/bootstrap.min.css', array(), '4.6.0' );
 	wp_enqueue_style( 'hamburgers', get_template_directory_uri() . '/vendors/hamburgers/hamburgers.min.css', array(), '' );
 	wp_enqueue_style( 'animatecss', get_template_directory_uri() . '/vendors/animatecss/animate.css', array(), '4.1.1' );
-	wp_enqueue_style( 'dds-by-style', get_stylesheet_uri(), array(), '3.6' );
+	wp_enqueue_style( 'dds-by-style', get_stylesheet_uri(), array(), '3.61' );
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/vendors/bootstrap-4.6.0-dist/js/bootstrap.min.js', array(), '4.6.0' );
@@ -730,10 +730,10 @@ function dds_main_contactform() {
         <div class="row home__contacts" itemscope itemtype="https://schema.org/Organization">
             <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-10 offset-1">
                 <ul class="row list__none">
-                    <li class="col-12 col-md-4"> <?php phone_number(); ?> </li>
+                    <li class="col-12 col-md-5"> <?php phone_number(); ?> </li>
                     <li class="col-12 col-md-4"> <?php e__mail(); ?>  </li>
-                    <li class="col-12 col-md-4">
-                        <ul class="navigation__social">
+                    <li class="col-12 col-md-3">
+                        <ul class="navigation__social" >
 							<?php social_media(); ?>
                         </ul>
                     </li>

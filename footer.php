@@ -1,7 +1,7 @@
 </main>
 <footer id="colophon" class="site-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
     <style>
-        .menu-footer_about-container a{
+        .menu-footer_about-container a {
             padding-left: 0;
         }
 
@@ -57,21 +57,25 @@
                     <li><?php phone_number(); ?></li>
                     <li><?php e__mail(); ?></li>
 
-                    <li class="text-left">
-                        <a class="no__left" title="Telegram"
+                    <li class="text-left" style="width: 150px;">
+
+                        <a class="" title="Telegram"
                            href="<?php echo get_option( 'dds_options' )['msg_tg']; ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/icons/telegram-logo.svg" alt="Telegram">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/icons/telegram-logo.svg"
+                                 alt="Telegram">
                         </a>
 
-                        <a class="col" title="Viber" href="<?php echo get_option( 'dds_options' )['msg_vb']; ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/icons/viber-logo.svg" alt="Viber">
+                        <a class="" title="Viber" href="<?php echo get_option( 'dds_options' )['msg_vb']; ?>">
+                            <img width="" src="<?php echo get_template_directory_uri(); ?>/img/icons/viber-logo.svg"
+                                 alt="Viber">
                         </a>
-                        <a class="col " title="Skype" href="<?php echo get_option( 'dds_options' )['msg_sk']; ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/icons/skype-logo.svg" alt="Skype">
+                        <a class="" title="Skype" href="<?php echo get_option( 'dds_options' )['msg_sk']; ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/icons/skype-logo.svg"
+                                 alt="Skype">
                         </a>
                     </li>
-                    <li class="text-left mt-3">
-	                    <?php social_media(); ?>
+                    <li class="text-left mt-3" style="width: 150px;">
+						<?php social_media(); ?>
                     </li>
 
 
@@ -82,11 +86,11 @@
                 <h4>Клиентам</h4>
                 <p>Необязательно у нас что-то заказывать. Вы просто можете спросить совет и мы с радостью поможем.</p>
             </div>
-<!--            <div class="col-lg-2 col-12 mt-30">-->
-<!--                <ul class="navigation__social">-->
-<!--					--><?php //social_media(); ?>
-<!--                </ul>-->
-<!--            </div>-->
+            <!--            <div class="col-lg-2 col-12 mt-30">-->
+            <!--                <ul class="navigation__social">-->
+            <!--					--><?php //social_media(); ?>
+            <!--                </ul>-->
+            <!--            </div>-->
         </div>
 
         <ul class="row justify-content-center terms list__none">
