@@ -1,4 +1,7 @@
 <?php
+/**
+ * Template Name: Страница - о нас
+*/
 get_header();
 
 category__header( 'О нас' );

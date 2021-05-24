@@ -130,12 +130,8 @@
 <!--    <h2>Dialog Title</h2>-->
 <!--    <p>Dialog content and other stuff will go here</p>-->
 <!--</dialog>-->
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NN7D6F4"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
+
+
 <?php wp_footer(); ?>
 <!--<script>    new WOW().init();</script>-->
 </body>

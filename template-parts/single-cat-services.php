@@ -7,7 +7,7 @@
  * @package dds.by
  */
 
-get_header();
+
 ?>
     <article class="pagestyle">
         <header class="row bg_1 header__carousel ">
@@ -70,6 +70,4 @@ get_header();
 		<?php portfolio_same_posts( 'Примеры работ' ); ?>
 
     </article>
-<?php //echo get_the_title(); ?>
-<?php
-get_footer();
+

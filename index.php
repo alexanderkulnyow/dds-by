@@ -15,19 +15,17 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-        <? include 'components/carousel.php' ?>
-		<main id="main" class="site-main">
+    <main id="primary" class="site-main">
 
 		<?php
 		if ( have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) :
 				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
+                <header>
+                    <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+                </header>
+			<?php
 			endif;
 
 			/* Start the Loop */
@@ -52,9 +50,8 @@ get_header();
 		endif;
 		?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+    </main><!-- #main -->
 
 <?php
-
+//get_sidebar();
 get_footer();

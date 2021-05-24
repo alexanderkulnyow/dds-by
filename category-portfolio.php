@@ -8,6 +8,7 @@
  */
 
 get_header();
+
 category__header( 'Наши работы' );
 kama_breadcrumbs( ' /' );
 ?>

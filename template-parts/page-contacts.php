@@ -1,5 +1,6 @@
 <?php
 /**
+ * Template Name: Страница - контакты
  * The main template file
  *
  * This is the most generic template file in a WordPress theme

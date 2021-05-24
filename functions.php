@@ -12,12 +12,13 @@ add_action( 'after_setup_theme', 'dds_by_setup' );
 add_action( 'after_setup_theme', 'dds_by_content_width', 0 );
 add_action( 'widgets_init', 'dds_by_widgets_init' );
 add_action( 'init', 'page_excerpt' );
-add_filter( 'template_include', 'my_template' );
+
 add_filter( 'emoji_svg_url', '__return_empty_string' );
-add_filter( 'single_template', 'post_templates' );
+//add_filter( 'single_template', 'post_templates' );
 add_action( 'admin_init', 'dds_option_settings' );
 add_action( 'widgets_init', 'dds_remove_default_widget', 20 );
 add_action( 'wp_enqueue_scripts', 'dds_by_scripts' );
+add_filter( 'template_include', 'my_template', 100);
 
 function phone_number() {
 	echo '<a href="' . get_option( 'dds_options' )['phone_link'] . '" itemprop="telephone">' . get_option( 'dds_options' )['phone_text'] . '</a>';
@@ -130,7 +131,7 @@ function dds_by_scripts() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/vendors/bootstrap-4.6.0-dist/css/bootstrap.min.css', array(), '4.6.0' );
 	wp_enqueue_style( 'hamburgers', get_template_directory_uri() . '/vendors/hamburgers/hamburgers.min.css', array(), '' );
 	wp_enqueue_style( 'animatecss', get_template_directory_uri() . '/vendors/animatecss/animate.css', array(), '4.1.1' );
-	wp_enqueue_style( 'dds-by-style', get_stylesheet_uri(), array(), '3.61' );
+	wp_enqueue_style( 'dds-by-style', get_stylesheet_uri(), array(), '3.63' );
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/vendors/bootstrap-4.6.0-dist/js/bootstrap.min.js', array(), '4.6.0' );
@@ -290,19 +291,18 @@ function my_template( $template ) {
 		}
 	}
 
-	# шаблон для группы рубрик
-	// этот пример будет использовать файл из папки темы tpl_special-cats.php,
-	// как шаблон для рубрик с ID 9, названием "Без рубрики" и слагом "php"
-	if ( is_category( array( 9, 'services', 'php' ) ) ) {
-		return get_stylesheet_directory() . '/template-parts/category-service.php';
-	}
-	if ( is_category( array( 9, 'portfolio', 'php' ) ) ) {
-		return get_stylesheet_directory() . '/template-parts/category-portfolio.php';
-	}
-
 	return $template;
 //
 }
+
+add_filter( 'page_template_hierarchy', function( $templates ){
+	// добавим поиск в папке 'tpl' в теме. Файла с именем 'page-(page_name).php'
+	array_unshift( $templates, 'template-parts/'. $templates[0] ); // 'tpl/page-(page_name).php'
+
+	//array_unshift( $templates, 'tpl/'. $templates[1] ); // 'tpl/page-(page_id).php'
+
+	return $templates;
+});
 
 require get_template_directory() . '/f/f_breadcrumbs.php';
 

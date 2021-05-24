@@ -1,7 +1,3 @@
-<?php
-get_header();
-?>
-
     <article>
         <section>
             <header class="container mt-100">
@@ -29,6 +25,4 @@ get_header();
     </article>
 
 
-<?php
 
-get_footer();
